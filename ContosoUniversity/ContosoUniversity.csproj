@@ -147,6 +147,11 @@
     </Compile>
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Migrations\201604301812598_InitialCreate.cs" />
+    <Compile Include="Migrations\201604301812598_InitialCreate.Designer.cs">
+      <DependentUpon>201604301812598_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Student.cs" />
@@ -157,6 +162,10 @@
     <Content Include="App_Data\ContosoUniversity1.mdf" />
     <Content Include="App_Data\ContosoUniversity1_log.ldf">
       <DependentUpon>ContosoUniversity1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\ContosoUniversity2.mdf" />
+    <Content Include="App_Data\ContosoUniversity2_log.ldf">
+      <DependentUpon>ContosoUniversity2.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -200,7 +209,11 @@
     <Content Include="Views\Student\Edit.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604301812598_InitialCreate.resx">
+      <DependentUpon>201604301812598_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
