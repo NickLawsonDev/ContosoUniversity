@@ -151,9 +151,24 @@
     <Compile Include="Migrations\201604301812598_InitialCreate.Designer.cs">
       <DependentUpon>201604301812598_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605021351166_DataAttributesStudentModel.cs" />
+    <Compile Include="Migrations\201605021351166_DataAttributesStudentModel.Designer.cs">
+      <DependentUpon>201605021351166_DataAttributesStudentModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605021355320_DataAttributesStudentModelColumn.cs" />
+    <Compile Include="Migrations\201605021355320_DataAttributesStudentModelColumn.Designer.cs">
+      <DependentUpon>201605021355320_DataAttributesStudentModelColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605021431545_ComplexDataModel.cs" />
+    <Compile Include="Migrations\201605021431545_ComplexDataModel.Designer.cs">
+      <DependentUpon>201605021431545_ComplexDataModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
@@ -212,6 +227,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201604301812598_InitialCreate.resx">
       <DependentUpon>201604301812598_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605021351166_DataAttributesStudentModel.resx">
+      <DependentUpon>201605021351166_DataAttributesStudentModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605021355320_DataAttributesStudentModelColumn.resx">
+      <DependentUpon>201605021355320_DataAttributesStudentModelColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605021431545_ComplexDataModel.resx">
+      <DependentUpon>201605021431545_ComplexDataModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
